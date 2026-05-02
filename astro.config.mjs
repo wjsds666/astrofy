@@ -6,5 +6,8 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.astrojs.com',
+  image: {
+    service: passthroughImageService(),
+  },
   integrations: [mdx(), sitemap(), tailwind()]
 });
